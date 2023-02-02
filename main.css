@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#header a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+
+  padding: 1rem;
+}
+#header a:hover {
+  text-decoration: underline solid 1px black;
+}
+.header {
+  align-items: center;
+  text-align: center;
+}
+#main-a .container h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.img-grid img {
+  width: 20rem;
+  height: 20rem;
+}
+.img-grid img:hover {
+  opacity: 0.9;
+}
+
+body {
+  background: url(images/background.jpeg) no-repeat center center/cover;
+}
+.icon {
+  height: 1rem;
+  width: 1rem;
+}
