@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
+  box-sizing: border-box;
 }
 
 #header a {
@@ -24,14 +25,54 @@
   font-size: 4rem;
   text-align: center;
 }
-
+#main-a .container p {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+#main-b .container-b p {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 1rem;
+}
+#main-b .container-b {
+  position: relative;
+}
+#main-b .container-b .btn {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#main-b .container-b a {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background: #f4f4f4;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+#main-b .container-b a:hover {
+  font-weight: 900;
+  opacity: 0.9;
+}
+.bold {
+  font-weight: 700;
+  font-size: 3rem !important;
+}
 .img-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.1rem;
 }
 .img-grid img {
-  width: 20rem;
-  height: 20rem;
+  width: 100%;
+  height: 25rem;
+  line-height: 100%;
 }
 .img-grid img:hover {
   opacity: 0.9;
@@ -41,6 +82,19 @@ body {
   background: url(images/background.jpeg) no-repeat center center/cover;
 }
 .icon {
-  height: 1rem;
-  width: 1rem;
+  height: 3rem;
+  width: 3rem;
+}
+#footer {
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#footer p {
+  font-size: 2rem;
+  width: 100%;
+  padding: 2rem;
+  font-weight: 700;
 }
